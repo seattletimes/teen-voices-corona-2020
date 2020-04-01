@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <!-- content goes here -->
+
+      <div class="container">
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/ENGRAV.jpg');">
+            <div class="overlay" style="background-color: #753b31;" data-number="8"><p>"This slowed down way of life has been really beneficial for my mental health."<span> - Charlotte</span></p></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/OLEBAR1.jpg');">
+            <div class="overlay" style="background-color: #5b4e75;" data-number="5"><p>"I need to call upon my ancestors to inspire me out of bed each morning and into a healthy daily routine."<span> - George</span></p></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/TAKAI.JPG');" >
+            <div class="overlay" style="background-color: #3e807b;" data-number="6"><p>"When I decided to make my own sourdough starter, I didn’t know it would come in handy for surviving the coronavirus."<span> - Melissa</span></p></div>
+          </div>
+        </div>
+
+        <div class="story" data-number="8">
+          I have been playing hockey for 8 years, and I hope to play for a Division 1 university someday. I worry that the coronavirus might affect that. The thought of not being able to go on the ice for several months is loathsome. The ice rink has been my second home and the people I see there are my family. I normally visit the rink everyday, so the thought of not going at all had never crossed my mind before now.
+
+          When I first heard about coronavirus, I wasn’t worried that it would affect me. Instead, I continued going to the rink and practicing in preparation for the multi-district camp I had been selected to attend in June. Being the only goalie of my age chosen to attend this highly selective camp, I needed to train as much as possible to impress college scouts.
+
+          Later, I received notice that all ice rink facilities and workout facilities would be closed due to the pandemic. I am worried that the multi-district camp, which is my last chance to make it to national camp, might get cancelled as well. Making it to national camp has been my goal for three years. I aim to play Division 1 women’s hockey in college, and this is my best chance to be seen by college coaches.
+
+          As a goalie, it is hard to do any sort of training off the ice. I am currently trying to cope with my situation by using exercise equipment I have at home and maintaining contact with my fitness coach. In terms of goalie-specific training, I have been using a tennis ball to maintain my tracking abilities. I am doing everything I can off-ice to stay in shape for the Multi-District camp and my future in college hockey.
+        </div>
+
+
+        <div class="story" data-number="5">
+          <div class="hed">Calling upon my ancestors</div>
+          <p>In my native Haida culture, there's an initiation into adulthood. A boy goes on a journey alone and doesn't return to his village until he matures. In a sense, I took that journey when I was 16 and walked away from school. I disappeared for about two years from my teachers, from my family. I wanted to learn on my own. I wanted to figure out for myself who I was, and what’s important to me.</p>
+          <p>Then, at 19, I returned to high school. I realized I needed my diploma to transition fully to adulthood. I re-enrolled at Interagency Academy, an alternative school in Seattle that lets students finish at their own pace. I knew I needed to enlist people who would help me achieve my goals, like my Uncle Al.</p>
+          <p>Before the pandemic, Al and I went to the gym four times a week. It gave me stability. I do better when I can exercise. Without the movement, it’s hard to stay in that school chair. If I know I’m going to the gym later, my body doesn’t scream at me to move. I’m not antsy because I’m conserving energy for the gym.</p>
+          <p>Now, going to the gym has been deemed unessential. My routine has been shattered. I was just getting back on track after the disruption of midwinter break. I’d developed a graduation plan with my adviser, and my workouts with Uncle Al were keeping me focused. </p>
+          <p>Ultimately, I’ve had to remind myself of lessons I learned during my time on my own: Time doesn’t stop. The sun will rise regardless of how I feel. Procrastination is my enemy. I need to call upon my ancestors to inspire me out of bed each morning and into a healthy daily routine. A routine that will lead me to graduation.</p>
+
+          <div class="stats">George Olebar, 20, is a senior at SW Interagency Academy in Seattle.</div>
+        </div>
+
+        <div class="story" data-number="6">
+          <div class="hed">Baking new opportunities</div>
+
+          <p>When I decided to make my own sourdough starter, I didn’t know it would come in handy for surviving the coronavirus.</p>
+
+          <p>Before the pandemic began, I hadn’t baked anything with yeast since middle school, and those baguettes were better off as baseball bats. That alone was enough for me to cross out “baker” from my list of career choices. Yet here I am, a junior in college studying design, peeking at that list again.</p>
+
+          <p>Despite my rocky start, I dug out my bench scraper and tried again. I needed an escape from staring at my cursor all day while my motivation to design slowly faded. As mid-college-crisis thoughts pervaded my head, bread gave me the comfort I needed. To feel the flour slip between my fingers, to see the yeast spring into action, and to taste my buttery creations with family and friends — that was joy for me.</p>
+
+          <p>One month later and crumb, autolyse, and biga have become part of my vocabulary now that I’ve had the time to keep my kitchen smelling like rosemary focaccia. Although the stay-at-home order means I won’t have as many taste-testers, I’ve been keeping in touch with friends through Instagram — posting photos of my daily progress, asking what to make, and then doing it.</p>
+
+          <p>Although I’ll be continuing classes online this upcoming quarter, I want to make sure I spend less time typing and more time kneading. Although my counter space might not be enough for the two dozen English muffins I’m about to shape right now, I want the challenge.</p>
+
+          <p>Once these crazy times are over, I may or may not work at a bakery. This pandemic is giving me time to consider it. No matter what, I hope I master homemade sourdough!</p>
+
+          <div class="stats">Melissa Takai, 20, is a junior at the University of Washington.</div>
+        </div>
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/NORRIS.jpg');">
+            <div class="overlay" style="background-color: #76a7e2;" data-number="2"><p>"I don’t get very excited about many things in life anymore, which makes my mom sad."<span> - Riplee</span></p></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/KHANAL2.jpg');">
+            <div class="overlay" style="background-color: #e0be8e;" data-number="4"><p>"When our district started remote learning, I found purpose again. With assignments and deadlines, I’ve been able to create a schedule and follow it every day."<span> - Ritika</span></p></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/MOE.jpg');">
+            <div class="overlay" style="background-color: #c51e30;" data-number="1"><p>"I hope to play (hockey) for a Division 1 university someday...the coronavirus might affect that dream."</p></div>
+          </div>
+        </div>
+
+
+        <div class="story" data-number="2">
+        <div class="hed">An unknown future</div>
+        <p>Every night my family watches the news. Before, when we watched it, I saw the weather, celebrity drama, criminal stuff, etc. But now all I see is coronavirus, COVID-19, pandemic, and the virus. It makes me sad how much the numbers rise each day.</p>
+        <p>What makes me more depressed is how pessimistic and hopeless people are for the future. I feel like the people who are trying to save our country from this surreal lifestyle give no reassurance and bring fear.</p>
+        <p>My middle school might not even reopen until September, and even then I wouldn’t go back. I will immediately start high school. Missing the end of my middle school year is very saddening, because some of my friends are not going to the same high school as me, and I will miss some of my teachers. I don’t like the fact that I will be entering high school as a student who didn’t finish the 8th grade.</p>
+        <p>I am thankful for those working day and night for all of the citizens in the USA. However some don’t even care. People should take this virus more seriously, and if they don't, the quarantine will last longer. More people could catch it.</p>
+        <p>At home, when I think about this, I get really depressed and moody, which is unusual because I’m normally a very happy person. I don’t get very excited about many things in life anymore, which makes my mom sad.</p>
+        <p>I live with my mom, stepdad, and my two half-sisters who are younger than 8. I also worry for their safety, as well as my other family members in Seattle and New York. I usually am happy and positive, but I don’t know anymore. The future is unknown to us all.</p>
+        <div class="stats">Riplee Norris, 14, is an 8th grade student at Glover Middle School in Spokane.</div>
+        </div>
+
+
+
+        <div class="story" data-number="4">
+          <div class="hed">Missing Structure</div>
+
+          <p>On March 11, my life was completely normal. Up at 4:30 a.m. to read a book, out of the house by 6:15, and on to a structured and intense seven-period high school schedule. The next day, I went back to school for the last time, not knowing when we’d be back.</p>
+
+          <p>The first few days after that were rough. Suddenly, I had no impending deadlines, no interactions with my teachers, no structure, and an AP test still looming. For a while, I felt lost. The news I was reading did nothing to help. It was alarming seeing the ways COVID-19 was attacking Washington state.</p>
+
+          <p>For the first week or so, I felt trapped within my house. I wanted to be at school, where I would be forced to keep a strict schedule and get to interact with teachers and peers.</p>
+
+          <p>When our district started remote learning, I found purpose again. With assignments and deadlines, I’ve been able to create a schedule and follow it every day.</p>
+
+          <p>Since my schedule is not as intense as it would be if we were in school, I suddenly have time to pick up musical instruments I haven’t had the chance to play in months, read for longer, and bond with friends virtually, all the while keeping myself from dwelling on all the bad things.</p>
+
+          <p>I miss interacting with my teachers and peers in person so much. I hate knowing that so many people are dying because of this virus and that we never know where it will strike next.  However, I also think we are in a unique situation where we can be creative, keep busy and pursue hobbies that we once wouldn’t have been able to, all the while staying at home.</p>
+
+          <div class="stats">Ritika Khanal, 16, is a sophomore at Mountlake Terrace High School in Mountlake Terrace.</div>
+        </div>
+
+
+
+        <div class="story" data-number="1">
+          <div class="hed">Off the ice</div>
+
+          <p>I have been playing hockey for 10 years, and I hope to play for a Division 1 university someday. I worry that the coronavirus might affect that dream. The thought of not being able to go on the ice for several months is loathsome. The ice rink has been my second home and the people I see there are my family. I normally visit the rink every day, so the thought of not going at all had never crossed my mind before now.</p>
+
+          <p>When I first heard about coronavirus, I wasn’t worried that it would affect me. Instead, I continued going to the rink and practicing for the multi-district camp I had been selected to attend in June. Being the only goalie of my age chosen to attend this highly selective camp, I needed to train as much as possible to impress college scouts.</p>
+
+          <p>Later, I received notice that all ice rink facilities and workout facilities would be closed due to the pandemic. I am worried that the multi-district camp, which is my last chance to make it to national camp, might get canceled as well. Making it to national camp has been my goal for three years, because it’s my best chance to be seen by college coaches.</p>
+
+          <p>As a goalie, it is hard to do any sort of training off the ice. I am currently trying to cope with my situation by using exercise equipment I have at home and maintaining contact with my fitness coach. In terms of goalie-specific training, I have been using a tennis ball to maintain my tracking abilities. I am doing everything I can off-ice to stay in shape for the multi-district camp and my future in college hockey.</p>
+
+          <div class="stats">Taylor Moe, 16, is a junior at Cleveland High School in Seattle.</div>
+        </div>
+
+
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/SCHOETTMER.jpg');" >
+            <div class="overlay" style="background-color: #98aac6;" data-number="3"><p>"this is my quotations"<span> - Hannah</span></p></div>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/CROSTON.jpg');">
+            <div class="overlay" style="background-color: #627742;" data-number="7"><p>"Although staying at home is essential to the public's safety, it is beyond difficult for those who aren't comfortable in their own homes."<span> - Gabi</span></p></div>
+          </div>
+        </div>
+
+
+
+        <div class="box">
+          <div class="pic" style="background-image: url('assets/heads/CABAHUG.jpg');" >
+            <div class="overlay" style="background-color: #de9da2;" data-number="9"><p>"I can’t let it prevent me from really living."<span> - Jadenne</span></p></div>
+          </div>
+        </div>
+
+        <div class="story" data-number="3">
+          I have been playing hockey for 6 years, and I hope to play for a Division 1 university someday. I worry that the coronavirus might affect that. The thought of not being able to go on the ice for several months is loathsome. The ice rink has been my second home and the people I see there are my family. I normally visit the rink everyday, so the thought of not going at all had never crossed my mind before now.
+
+          When I first heard about coronavirus, I wasn’t worried that it would affect me. Instead, I continued going to the rink and practicing in preparation for the multi-district camp I had been selected to attend in June. Being the only goalie of my age chosen to attend this highly selective camp, I needed to train as much as possible to impress college scouts.
+
+          Later, I received notice that all ice rink facilities and workout facilities would be closed due to the pandemic. I am worried that the multi-district camp, which is my last chance to make it to national camp, might get cancelled as well. Making it to national camp has been my goal for three years. I aim to play Division 1 women’s hockey in college, and this is my best chance to be seen by college coaches.
+
+          As a goalie, it is hard to do any sort of training off the ice. I am currently trying to cope with my situation by using exercise equipment I have at home and maintaining contact with my fitness coach. In terms of goalie-specific training, I have been using a tennis ball to maintain my tracking abilities. I am doing everything I can off-ice to stay in shape for the Multi-District camp and my future in college hockey.
+        </div>
+
+
+        <div class="story" data-number="7">
+          I have been playing hockey for 10 years, and I hope to play for a Division 1 university someday. I worry that the coronavirus might affect that. The thought of not being able to go on the ice for several months is loathsome. The ice rink has been my second home and the people I see there are my family. I normally visit the rink everyday, so the thought of not going at all had never crossed my mind before now.
+
+          When I first heard about coronavirus, I wasn’t worried that it would affect me. Instead, I continued going to the rink and practicing in preparation for the multi-district camp I had been selected to attend in June. Being the only goalie of my age chosen to attend this highly selective camp, I needed to train as much as possible to impress college scouts.
+
+          Later, I received notice that all ice rink facilities and workout facilities would be closed due to the pandemic. I am worried that the multi-district camp, which is my last chance to make it to national camp, might get cancelled as well. Making it to national camp has been my goal for three years. I aim to play Division 1 women’s hockey in college, and this is my best chance to be seen by college coaches.
+
+          As a goalie, it is hard to do any sort of training off the ice. I am currently trying to cope with my situation by using exercise equipment I have at home and maintaining contact with my fitness coach. In terms of goalie-specific training, I have been using a tennis ball to maintain my tracking abilities. I am doing everything I can off-ice to stay in shape for the Multi-District camp and my future in college hockey.
+        </div>
+
+        <div class="story" data-number="9">
+          <div class="hed">Finding balance</div>
+
+          <p>My day-to-day life used to revolve around school. Now it goes like this: help with chores, read books for online school, and paint random things with my siblings. Repeat. I have a severe case of quarantine cabin fever.</p>
+
+          <p>This is partially remedied day-by-day through funny coronavirus memes. While older generations are freaking out, buying all the toilet paper in the grocery stores, Gen Z has flocked to social media like Twitter and Tiktok to laugh at the whole situation. Many of us won’t get to experience prom or walking to get our diploma during graduation. I’ve avoided news altogether to prevent myself from panicking like the adults. It’s not that we think everything is a joke, but it helps us cope with the crisis.</p>
+
+          <p>Quarantine is not all bad. Before the pandemic, I pushed off many things like painting or starting a new Netflix show because I just had no time between maintaining schoolwork, hanging out with friends, work and planning for my future. Rather than using my free time for hobbies, I studied a little longer before my big test or took a couple minutes to sleep before returning to my schoolwork. Now I have time to pursue mini passions I wouldn’t have been able to pre-pandemic, like painting, baking, and learning Spanish.</p>
+
+          <p>This pandemic has also taught me that I need to take risks in life. Not risks like meeting in groups of over ten people for no reason, no. Risks like traveling the world before all the borders close (again) or re-evaluating my self-image. While the pandemic has taken many things from me, it made me realize that I can’t let it prevent me from really living.</p>
+          <div class="stats">Jadenne Radoc Cabahug, 17, is a senior at Kentridge High School in Renton.</div>
+
+        </div>
+
+
+
+
+
+      </div> <!-- end container -->
+
+
+
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

@@ -3,6 +3,12 @@
 .container {
   max-width: 960px;
   margin: auto;
+  text-align: center;
+  padding-bottom: 50vh;
+
+  @media @desktop-up {
+    padding-bottom: 20vh;
+  }
 }
 
 .spacer {
@@ -14,12 +20,16 @@
 
   display: inline-block;
   position: relative;
-  width: 32%;
+  width: 49%;
+  transition: .3s ease;
+  padding: 0;
+  margin: -2px -1px;
 
 
   @media @desktop-up {
-    width: 33%;
-    padding: 1%;
+    max-width: 275px;
+    padding: 2px 4px;
+    margin: 0;
   }
 
   .overlay {
@@ -36,7 +46,7 @@
 
   p {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,14 +55,33 @@
     transform: translate(-50%, -50%);
     text-align: center;
     margin: 0;
-    width: 75%;
+    width: 95%;
     font-family: 'Quicksand', sans-serif;
+
+    @media @desktop-up {
+      font-size: 17px;
+      width: 75%;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.4em;
+    }
   }
 }
 
 
 
 
+}
+
+.box:hover .overlay {
+  opacity: 1 !important;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.05,1.05);
 }
 
 .toggled {
@@ -72,14 +101,47 @@
   margin: 1em 1%;
   // background-color: #ddd;
   padding: 1em;
-  border-top: 1px solid #bbb;
+  // border-top: 1px solid #bbb;
+  text-align: left;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 10;
+  width: 90%;
 
+  background-color: white;
+
+  @media @desktop-up {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  i {
+    float: right;
+    font-size: 2em;
+    opacity: 0.6;
+  }
+
+  i:hover {
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    opacity: 1;
+  }
+
+  .first {
+    clear:both;
+  }
 
 
 
   .hed {
     font-weight: bold;
     font-size: 1.5em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
   }
 
   .stats {
@@ -94,8 +156,38 @@
   // height: ~"calc(100% - 200px)";
   // height: ~"-moz-calc(100% - 200px)";
   // height: ~"-webkit-calc(100% - 200px)";
+  background-position: center;
 
-  height: 310px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @desktop-up {
+    height: 260px;
+  }
+}
+
+.pic2 {
+  width: 150px;
+  position: relative;
+  // height: ~"calc(100% - 200px)";
+  // height: ~"-moz-calc(100% - 200px)";
+  // height: ~"-webkit-calc(100% - 200px)";
+  background-position: center;
+
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: none;
+  margin: auto;
+  margin-bottom: 0.7em;
+
+
+  @media @desktop-up {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    float: left;
+
+  }
 }
